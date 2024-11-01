@@ -1,0 +1,23 @@
+{
+  "name": "Default Linux Universal",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ziglang.vscode-zig"
+      ],
+      "settings": {
+        "zig.zls.enabled": true,
+        "zig.zigPath": "/usr/local/bin/zig",
+        "zig.zls.zigLibPath": "/usr/local/lib/zig/lib/",
+        "zig.zls.path": "/usr/local/bin/zls",
+        "zig.buildOption": "build"
+      }
+    }
+  },
+  "containerEnv": {
+    "SHELL": "/usr/bin/zsh"
+  }
+}
